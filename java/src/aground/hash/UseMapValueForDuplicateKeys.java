@@ -3,7 +3,6 @@ package aground.hash;
 import java.util.HashMap;
 import java.util.Map;
 
-
 public class UseMapValueForDuplicateKeys {
 
     public static void main(String[] args) {
@@ -35,4 +34,5 @@ public class UseMapValueForDuplicateKeys {
 
         return pMap.keySet().iterator().next();
     }
+
 }
