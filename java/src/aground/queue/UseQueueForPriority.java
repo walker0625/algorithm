@@ -2,6 +2,7 @@ package aground.queue;
 
 import java.util.*;
 import java.util.AbstractMap.SimpleEntry;
+import java.util.stream.Collectors;
 
 public class UseQueueForPriority {
 
@@ -26,13 +27,10 @@ public class UseQueueForPriority {
             queue.add(new SimpleEntry(priorities[i], isTarget));
         }
 
-        Integer[] boxedPriorities = Arrays.stream(priorities).boxed().toArray(Integer[]::new);
-        Arrays.sort(boxedPriorities, Collections.reverseOrder());
-
-        Queue<Integer> maxPriorityQueue = new LinkedList<>();
-        for(int priority : boxedPriorities) {
-            maxPriorityQueue.add(priority);
-        }
+        Queue<Integer> maxPriorityQueue = Arrays.stream(priorities)
+                                                .boxed()
+                                                .sorted(Collections.reverseOrder())
+                                                .collect(Collectors.toCollection(LinkedList::new));
 
         while (!queue.isEmpty()) {
             SimpleEntry task = queue.poll();
