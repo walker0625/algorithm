@@ -87,7 +87,7 @@ public class ConsecutiveSeq {
 
 
     public static void main(String[] args) {
-        int[] nums = {6, 7, 100, 5, 4, 4};
+        int[] nums = {0, 3, 7, 2, 5, 8, 4, 6, 0, 1};
         System.out.println(consecutiveSeq1(nums));
         System.out.println(consecutiveSeq2(nums));
         System.out.println(consecutiveSeq3(nums));
