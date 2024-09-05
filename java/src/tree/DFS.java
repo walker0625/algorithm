@@ -2,15 +2,15 @@ package tree;
 
 public class DFS {
 
-    private static void seachTreeByDfs(TreeNode curNode) {
+    private static void searchTreeByDfs(TreeNode curNode) {
 
         if(curNode == null) {
             return;
         }
 
         System.out.println(curNode.value);
-        seachTreeByDfs(curNode.left);
-        seachTreeByDfs(curNode.right);
+        searchTreeByDfs(curNode.left);
+        searchTreeByDfs(curNode.right);
     }
 
     public static void main(String[] args) {
@@ -23,7 +23,7 @@ public class DFS {
         root.right.left = new TreeNode(6);
         root.right.right = new TreeNode(7);
 
-        seachTreeByDfs(root);
+        searchTreeByDfs(root);
     }
 
 }

@@ -7,7 +7,7 @@ import java.util.Queue;
 
 public class BFS {
 
-    public static List seachTreeByBfs(TreeNode node) {
+    public static List searchTreeByBfs(TreeNode node) {
         List<Integer> visited = new ArrayList<>();
 
         if (node == null) {
@@ -41,7 +41,7 @@ public class BFS {
         root.right.left = new TreeNode(6);
         root.right.right = new TreeNode(7);
 
-        seachTreeByBfs(root).forEach(System.out::println);
+        searchTreeByBfs(root).forEach(System.out::println);
     }
 
 }
