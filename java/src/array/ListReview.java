@@ -2,7 +2,7 @@ package array;
 
 import java.util.Arrays;
 
-public class TwoSum2 {
+public class ListReview {
 
     public static void main(String[] args) {
         int[] nums = {2, 6, 11, 15};

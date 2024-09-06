@@ -2,7 +2,7 @@ package queue;
 
 import java.util.*;
 
-public class QueueTest {
+public class QueueReview {
 
     public static void main(String[] args) {
         queueSample();
